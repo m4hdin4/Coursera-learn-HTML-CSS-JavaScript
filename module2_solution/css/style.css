@@ -1,10 +1,77 @@
-@media(min-width: 992px){
+* {
+	box-sizing: border-box;
+}
 
+html {
+	font-family: calibri;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.row {
+	width: 100%;
+}
+
+.content {
+	margin: 10px 10px 10px 10px;
+	border: 1px solid black;
+	background-color: #888888;
+	position: relative;
+}
+
+.content > h3 {
+	margin-top: 0px;
+	float: right;
+	border: 1px solid black;
+	font-size: 25px;
+}
+
+.content > div{
+	clear: right;
+	padding: 0px 10px 0px 10px;
+}
+
+#SECTION1 .content h3 {
+	background-color: #00FFFF;
+}
+
+#SECTION2 .content h3 {
+	background-color: #BB1111;
+	color: #FFFFFF;
+}
+
+#SECTION3 .content h3 {
+	background-color: #0088FF;
+}
+
+
+
+@media(min-width: 992px){
+  .col-lg-4 {
+  	float: left;
+	width: 33.33%;
+  }
 }
 @media(min-width: 768px) and (max-width: 991px){
+  .col-md-6, .col-md-12 {
+	float: left;
+  }
+  
+  .col-md-6 {
+	width: 50%;
+  }
 
+  .col-md-12 {
+	width: 100%;
+  }
 }
 @media(max-width: 767px){
-
+	.col-sm-12 {
+		float: left;
+		width: 100%;
+	}
 }
 
